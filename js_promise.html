@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <h1>JavaScript Promise</h1>
+    <script type="text/javascript">
+
+     const myPromise=new Promise((resolved,rejected)=>{
+        const a=10,b=5;
+        const c=a+b;
+        if(c===4)
+     {
+        resolved(`Yes !,${a}+${b}=4`);
+     }else{
+        rejected(`No !,${a}+${b}!=4`);
+     }
+     });
+     myPromise.then((m)=>{
+        console.log(m);
+     }).catch((err)=>{
+        console.log(err);
+     })
+
+    </script>
+</body>
+</html>
